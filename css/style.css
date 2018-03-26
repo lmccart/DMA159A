@@ -149,6 +149,12 @@ pre {
   line-height: 1.45em;
 }
 
+#bird-cnv {
+  position:fixed;
+  top: 50px;
+  right: 20px;
+}
+
 
 @media screen and (max-width: 800px) {
   body {
@@ -170,5 +176,12 @@ pre {
     width: 100%;
     left: 0;
     top: 5em;
+  }
+
+}
+
+@media screen and (max-width: 1110px) {
+  #bird-cnv {
+    display:none;
   }
 }
