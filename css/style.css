@@ -4,6 +4,7 @@ body {
   font-family: 'Amiko', sans-serif;
   line-height: 1.5em;
   font-size: 15px;
+  background: #ecffea;
 }
 
 *, *:before, *:after {
@@ -68,14 +69,13 @@ nav ul {
 }
 
 a, .button {
-  color: darkviolet;
+  color: #d800ff;
   text-decoration: none;
   cursor: pointer;
 }
 
 a:hover, .button:hover {
-  background: yellow;
-  color: black;
+  background: #e3ff469c;
 }
 
 h1 a {
@@ -129,15 +129,14 @@ td {
 
 
 #projects h4 {
-  color: darkviolet;
+  color: #d800ff;
   display: inline-block;
   margin-top: 0;
   cursor: pointer;
 }
 
 #projects h4:hover {
-  color: black;
-  background: yellow;
+  background: #e3ff469c;
 }
 
 .label {
