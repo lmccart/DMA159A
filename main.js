@@ -30,7 +30,7 @@ var curSprites = [];
 
 var eatNum = 11;
 var mainNum = 4;
-var growNum = 23;
+var growNum = 29;
 var curNum;
 
 var wormsEaten = 0;
@@ -52,7 +52,7 @@ var cnv;
 function preload() {
   imageLoad(mainSprites, "main", mainNum);
   imageLoad(eatSprites, "eat", eatNum);
-  imageLoad(growSprites, "grow-v2-", growNum);
+  imageLoad(growSprites, "grow-v3-", growNum);
   curSprites = mainSprites;
   curNum = mainNum;
 }
@@ -61,15 +61,18 @@ function setup() {
   // put setup code here
   cnv = createCanvas(220, windowHeight-100);
   cnv.id('bird-cnv');
-  background("#ff00f7");
+  background(255);
   noStroke();
 }
 
 function draw() {
-  fill(255);
-  rect(9, 10, 201, height-20);
   cycleMain();
   image(curSprites[curIndex], 10, curPosY+10);
+  fill("#ff00f7");
+  rect(0, 0, width, 10);
+  rect(0, height-10, width, 10);
+  rect(0, 0, 10, height);
+  rect(width-10, 0, width, height);
 }
 
 function cycleMain() {
@@ -112,7 +115,8 @@ function mousePressed() {
 
         curSprites = growSprites;
         curNum = growNum;
-        curPosY = 0;
+        //mystery number based on size of image, plus egg alignment
+        curPosY = -1 * (2010 - height);
         state = 2;
       }
     }
