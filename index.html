@@ -12,7 +12,7 @@
   <link rel='stylesheet' href='css/normalize.min.css'>
   <link rel='stylesheet' href='css/style.css?v=1.0'></link>
   <link rel='stylesheet' href='css/prism.css'></link>
-  <link href="https://fonts.googleapis.com/css?family=Amiko" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
   <script src='https://code.jquery.com/jquery-3.1.1.min.js' integrity='sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=' crossorigin='anonymous'></script>
   <script src="p5.min.js"></script>
   <script src="addons/p5.dom.min.js"></script>
@@ -21,344 +21,345 @@
 </head>
 <body>
   <div class='container'>
+    <div class='content'>
 
-    <!-- NAV -->
-    <nav>
-      <ul id='links'>
-        <li class='button' data-id='syllabus'>Syllabus</li>
-        <li class='button' data-id='schedule'>Schedule</li>
-        <li class='button' data-id='projects'>Projects</li>
-        <li class='button' data-id='resources'>Resources</li>
-        <li><a target='_blank' href='https://docs.google.com/spreadsheets/d/1NgIUw0Sv_wzubkoR27KS18xeBsqxkafix07kYJWJlBs/edit?usp=sharing'>Attendance</a></li>
-      </ul>
-    </nav>
+      <!-- NAV -->
+      <nav>
+        <ul id='links'>
+          <li class='button' data-id='syllabus'>Syllabus</li>
+          <li class='button' data-id='schedule'>Schedule</li>
+          <li class='button' data-id='projects'>Projects</li>
+          <li class='button' data-id='resources'>Resources</li>
+          <li><a target='_blank' href='https://docs.google.com/spreadsheets/d/1NgIUw0Sv_wzubkoR27KS18xeBsqxkafix07kYJWJlBs/edit?usp=sharing'>Attendance</a></li>
+        </ul>
+      </nav>
 
-    <!-- HEADING -->
-    <h1><a href=''>Senior Projects: Interactivity and Games</a></h1>
+      <!-- HEADING -->
+      <h1><a href=''>Senior Projects: Interactivity and Games!!</a></h1>
 
-    <!-- SYLLABUS -->
-    <div id='syllabus' class='block' style='display: block'>
-      
-      <h2>Syllabus</h2>
-      <section>
-        Monday and Wednesday 2-4:50pm<br>
-        UCLA Broad Art Center 4230
-        <br><br>
-        Professor: <a href='mailto:lmccart@ucla.edu'>Lauren McCarthy</a>
-        <br>(office hours: By appointment, Broad 3246)
-        <br><br>
-        TA: <a href='mailto:stalgia.grigg@gmail.com'>Stalgia Grigg</a>
-        <br>(office hour: Tuesday + Thursday 2-3pm, Broad 3263)<br>
+      <!-- SYLLABUS -->
+      <div id='syllabus' class='block' style='display: block'>
         
-      </section>
-      
-      <section>
-        <h3>Description</h3>
-        <p>Senior Projects provides a capstone experience for the major, culminating in the Senior Show in June. You will work closely with the faculty to focus on a project defined by the your individual skills and professional interests. Each project will employ a process of research, conceptual development, prototype development, refinement, and production. You will also engage in critical analyses by reviewing and critiquing othersʼ works.</p>
+        <h2>Syllabus</h2>
+        <section>
+          Monday and Wednesday 2-4:50pm<br>
+          UCLA Broad Art Center 4230
+          <br><br>
+          Professor: <a href='mailto:lmccart@ucla.edu'>Lauren McCarthy</a>
+          <br>(office hours: By appointment, Broad 3246)
+          <br><br>
+          TA: <a href='mailto:stalgia.grigg@gmail.com'>Stalgia Grigg</a>
+          <br>(office hour: Tuesday + Thursday 2-3pm, Broad 3263)<br>
+          
+        </section>
+        
+        <section>
+          <h3>Description</h3>
+          <p>Senior Projects provides a capstone experience for the major, culminating in the Senior Show in June. You will work closely with the faculty to focus on a project defined by the your individual skills and professional interests. Each project will employ a process of research, conceptual development, prototype development, refinement, and production. You will also engage in critical analyses by reviewing and critiquing othersʼ works.</p>
 
-        <p>The 159A Senior Projects class focuses on interactive media, which includes game design, interactive installation, dynamic websites, creative coding, and electronics. Senior Projects is the only course offered that is directed by each studentʼs individual goals, interests and skills.</p>
+          <p>The 159A Senior Projects class focuses on interactive media, which includes game design, interactive installation, dynamic websites, creative coding, and electronics. Senior Projects is the only course offered that is directed by each studentʼs individual goals, interests and skills.</p>
 
-        <p>Interactivity and games should not be understood as limiting a project to technically mediated forms. Works in all mediums are considered. You are encouraged to work with media that allow you to hone in on your conceptual and visual sensibilities, and with which you already have proficiency.</p>
-      </section>
-      
-      <section>
-        <h3>Expectations</h3>
-        <span class='label'>Grading.</span> Grades will be determined according to the following breakdown:
+          <p>Interactivity and games should not be understood as limiting a project to technically mediated forms. Works in all mediums are considered. You are encouraged to work with media that allow you to hone in on your conceptual and visual sensibilities, and with which you already have proficiency.</p>
+        </section>
+        
+        <section>
+          <h3>Expectations</h3>
+          <span class='label'>Grading.</span> Grades will be determined according to the following breakdown:
+            <ul>
+              <li>Participation 20%</li>
+              <li>Process documentation 15%</li>
+              <li>Final documentation 15%</li>
+              <li>Final project 50%</li>
+            </ul>
+          <p>Outstanding or exceptional work will receive As, good work will receive Bs, sufficient work that does nothing more than meet requirements will receive Cs.</p>
+          
+          <p><span class='label'>Participation.</span> Participation is critical to passing and enjoying this class. Do the work, share your thoughts, ask questions, offer feedback during critiques. This class is meant to be a safe space in which you feel encouraged and supported in learning and taking creative risks. This means being aware and considerate of different backgrounds, perspectives, and identities. Respect each other and this space we are building together. Don’t assume, ask. Remain open, be willing to take responsibility, apologize, and learn. Help each other in this. If there are concerns please let me or Stalgia know as soon as possible.</p>
+          
+          <p><span class='label'><a href='https://docs.google.com/spreadsheets/d/1KI-6mijcypeczlwRfitTRq2lbtJpA3hB1dGWXfkrv7U/edit?usp=sharing' target='_blank'>Attendance.</a></span> Each unexcused absence will result in one full letter grade deduction. Three unexcused absences will result in a failed grade in the class. If there is an emergency and you must miss class, email <a href='mailto:stalgia.grigg@gmail.com'>Stalgia</a> before class. Absences will not be excused after the fact except in extreme circumstances. Illness requires a doctor’s note. If you are more than 10 minutes late, you will be marked tardy. Three tardies results in one unexcused absence. Your attendance can be viewed <a href='https://docs.google.com/spreadsheets/d/1KI-6mijcypeczlwRfitTRq2lbtJpA3hB1dGWXfkrv7U/edit?usp=sharing' target='_blank'>here</a>, any disputes should be discussed with the TA within two weeks.</p>
+          
+          <p><span class='label'>Late work.</span> Late work will not be accepted.</p>
+        </section>
+
+
+        <section>
+          <h3>Commitment to Diversity and Safer Spaces</h3>
+          <p>We understand the classroom as a space for practicing freedom; where one may challenge psychic, social, and cultural borders and create meaningful artistic expressions. To do so we must acknowledge and embrace the different identities and backgrounds we inhabit. This means that we will use preferred pronouns, respect self-identifications, and be mindful of special needs. Disagreement is encouraged and supported, however our differences affect our conceptualization and experience of reality, and it is extremely important to remember that certain gender, race, sex, and class identities are more privileged while others are undermined and marginalized. Consequently, this makes some people feel more protected or vulnerable during debates and discussions. A collaborative effort between the students, TA, and instructor is needed to create a supportive learning environment. While everyone should feel free to experiment creatively and conceptually, if a class member points out that something you have said or shared with the group is offensive, avoid being defensive; instead approach the discussion as a valuable opportunity for us to grow and learn from one another. Alternatively if you feel that something said in discussion or included in a piece of work is harmful, you are encouraged to speak with the instructor or TA. (<a href='https://github.com/voidlab/diversity-statement'>tx voidLab!</a>)</p>
+        </section>
+
+
+        <section>
+          <h3>Disability Services</h3>
+          <p>UCLA strives to make all learning experiences as accessible as possible. If you anticipate or experience academic barriers based on a disability, please let me know as soon as possible. It is necessary for you to register with the <a href='http://www.cae.ucla.edu/'>UCLA Center for Accessible Education</a> so that we can establish reasonable accommodations. After registration, make arrangements with me to discuss how to implement these accommodations.</p>
+        </section>
+      </div>
+
+      <!-- SCHEDULE -->
+      <div id='schedule' class='block'>
+        <h2>Schedule</h2>
+        <section>
+          <table>
+            <!-- WEEK 1 -->
+            <tr>
+              <td>WEEK 1</td>
+              <td>M 4/2</td>
+              <td>
+                Introduction<br>
+                ❗DUE: <a onclick="openSection('#projects', 'p1')">Pecha Kucha (15 x 20s) with initial idea</a><br>
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+            <tr>
+              <td></td>
+              <td>W 4/4</td>
+              <td>
+                Workshop: Developing Ideas
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+            
+
+            <!-- WEEK 2 -->
+            <tr>
+              <td>WEEK 2</td>
+              <td>M 4/9</td>
+              <td>
+                Individual meetings, studio
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+            <tr>
+              <td></td>
+              <td>W 4/11</td>
+              <td>
+                Individual meetings, studio
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+            
+
+            <!-- WEEK 3 -->
+            <tr>
+              <td>WEEK 3</td>
+              <td>M 4/16</td>
+              <td>
+                Presentation about Senor Show equipment and proposal requirements<br>
+                First Senior Show committee meetings<br>
+                DMA Lecture: <a href='http://dma.ucla.edu/events/calendar/?ID=1071'>Ian Cheng</a>, 6pm EDA
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+            <tr>
+              <td></td>
+              <td>W 4/18</td>
+              <td>
+                Individual meetings, studio
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+            
+            <!-- WEEK 4 -->
+            <tr>
+              <td>WEEK 4</td>
+              <td>M 4/23</td>
+              <td>
+                Individual meetings, studio
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+            <tr>
+              <td></td>
+              <td>W 4/25</td>
+              <td>
+                Individual meetings, studio
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+            <tr>
+              <td></td>
+              <td>Th 4/26</td>
+              <td>
+                Career Development Workshop Series: Portfolio Advice Panel
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+            
+            <!-- WEEK 5 -->
+            <tr>
+              <td>WEEK 5</td>
+              <td>M 4/30</td>
+              <td>
+                Individual meetings, studio<br>
+                Install project process for mid-term review
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+            <tr>
+              <td></td>
+              <td>W 5/2</td>
+              <td>
+                ❗DUE: Mid-term review presentations<br>
+                Final decisions on presented work
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+            
+            <!-- WEEK 6 -->
+            <tr>
+              <td>WEEK 6</td>
+              <td>M 5/7</td>
+              <td>
+                Lecture: Alumni panel "life after graduating"
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+            <tr>
+              <td></td>
+              <td>W 5/9</td>
+              <td>
+                Individual meetings, studio
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+            
+            <!-- WEEK 7 -->
+            <tr>
+              <td>WEEK 7</td>
+              <td>M 5/14</td>
+              <td>
+                Individual meetings, studio
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+            <tr>
+              <td></td>
+              <td>W 5/16</td>
+              <td>
+                Individual meetings, studio
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+            
+            <!-- WEEK 8 -->
+            <tr>
+              <td>WEEK 8</td>
+              <td>M 5/21</td>
+              <td>
+                DUE: Invitatiion to industry<br>
+                Individual meetings, studio
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+            <tr>
+              <td></td>
+              <td>W 5/23</td>
+              <td>
+                Workshop: Documenting work in exhibition<br>
+                Individual meetings, studio
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+            
+            <!-- WEEK 9 -->
+            <tr>
+              <td>WEEK 9</td>
+              <td>M 5/28</td>
+              <td>
+                Memorial Day: no class          
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+            <tr>
+              <td></td>
+              <td>W 5/30</td>
+              <td>
+                Individual meetings, studio
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+            
+            <!-- WEEK 10 -->
+            <tr>
+              <td>WEEK 10</td>
+              <td>M 6/4</td>
+              <td>
+                Installation
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+            <tr>
+              <td></td>
+              <td>W 6/6</td>
+              <td>
+                ❗DUE: Final presentation of all work / exhibition walkthrough
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+            <tr>
+              <td></td>
+              <td>Th 6/7</td>
+              <td>
+                <b>🎉 Senior Show Opening! 🎉</b>
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+          </table>
+        </section>
+      </div>
+
+      <!-- PROJECTS -->
+      <div id='projects' class='block'>
+        
+        <h2>Projects</h2>
+        <section>
+          <h3 id="p1">PECHA KUCHA (DUE 4/2)</h3>
+          <div id="p1-content" style='display:block;'>
+            <p>We will open the first class with 5 minute pecha kucha presentations (15 slides x 20 seconds each). The goal of your presentation is to share who you are, what kinds of work you make, and what you want to focus on for your senior project.</p>
+
+            <p>Please use <a href="https://docs.google.com/presentation/d/1JDzS5hW8lYUJvmH7PK9ngVp0TmfU-CPuBVhYkqcGSU4/edit?usp=sharing" target="_blank">this pecha kucha template</a> which has auto-timed slides set up for you. There are 15 slides, each designed to play for 20 seconds. Here are instructions to make a copy and setup your presentation:</p>
+
+            <ol>
+              <li>Open the <a href="https://docs.google.com/presentation/d/1JDzS5hW8lYUJvmH7PK9ngVp0TmfU-CPuBVhYkqcGSU4/edit?usp=sharing" target="_blank">template</a>. Go to File > Make a Copy.</li>
+              <li>Fill in the slide contents (you can delete the numbers).</li>
+              <li>When it's done, go to File > Publish to the web, and select these settings and click Publish:
+                <img src="imgs/publish.png">
+              </li>
+              <li>Copy the link and test it in your browser. In the URL, add an extra 0 to the part that says 2000, so it reads "delayms=20000". This will make the slides advance every 20s.</li>
+              <li>Add this updated URL and your name to <a href="https://docs.google.com/document/d/1d0DW5Dq2gJWVkJ9mnUsIlXAJxOPnJl_BGVzjzeZUN_E/edit?usp=sharing" target="_blank">this doc</a> before the start of the first class on 4/2.</li>
+            </ol>
+            <br>
+
+            <p>Slides 1-10 should contain previous work you've done that best illustrates your skills and interests. This need not cover everything you’ve made, just the most relevant work. You might include images, text, or video clips. You can present 10 different works, or multiple images of a fewer number of projects.</p>
+
+            <p>Slides 11-12 should contain your initial direction for your senior project. Determine a topic or issue that you would like to focus on for this project. It could be something in the news, a question on your mind, an issue you feel needs more awareness, or anything else. The topic should be <b>specific</b>, and something you can form a <b>unique point of view</b> around. That is, "cats" or "the color red" are probably not appropriate topics. The first two slides should introduce your topic of focus and tell us why it's interesting to you.</p>
+
+            <p>Slides 13-15 should contain three <b>different</b> possible ideas for what your senior project will be. What form it may take, how it might specifically address your topic, what it might communicate. Remember, you only have 20 seconds to talk about each idea so your slide will need to be concise.</p>
+
+            <p>The timing of a pecha kucha is fast. <b>You will need to rehearse in advance.</b> This is your senior project. This is your chance to start with momentum and make a really great project.</p>
+
+          </div>
+        </section>
+        
+      </div>
+
+
+      <!-- RESOURCES -->
+      <div id='resources' class='block'>
+        
+        <h2>Resources</h2>
+
+        <section>
+          Coming soon...
+          <!-- <h3 id="tools">TOOLS</h3>
           <ul>
-            <li>Participation 20%</li>
-            <li>Process documentation 15%</li>
-            <li>Final documentation 15%</li>
-            <li>Final project 50%</li>
-          </ul>
-        <p>Outstanding or exceptional work will receive As, good work will receive Bs, sufficient work that does nothing more than meet requirements will receive Cs.</p>
+            <li><a href="https://www.google.com/chrome/browser/">Chrome</a> - You may use any browser you like but this one will be used for demos in class</li>
+            <li><a href="http://brackets.io/">Brackets</a> - Code editor for HTML/CSS/JS</li>
+            <li><a href="https://cyberduck.io/?l=en">Cyberduck</a> - FTP tool for uploading files online</li>
+            <li><a href="./ftp/">How to FTP</a> - Uploading your files online with Cyberduck</li>
+          </ul> -->
+        </section>
         
-        <p><span class='label'>Participation.</span> Participation is critical to passing and enjoying this class. Do the work, share your thoughts, ask questions, offer feedback during critiques. This class is meant to be a safe space in which you feel encouraged and supported in learning and taking creative risks. This means being aware and considerate of different backgrounds, perspectives, and identities. Respect each other and this space we are building together. Don’t assume, ask. Remain open, be willing to take responsibility, apologize, and learn. Help each other in this. If there are concerns please let me or Stalgia know as soon as possible.</p>
         
-        <p><span class='label'><a href='https://docs.google.com/spreadsheets/d/1KI-6mijcypeczlwRfitTRq2lbtJpA3hB1dGWXfkrv7U/edit?usp=sharing' target='_blank'>Attendance.</a></span> Each unexcused absence will result in one full letter grade deduction. Three unexcused absences will result in a failed grade in the class. If there is an emergency and you must miss class, email <a href='mailto:stalgia.grigg@gmail.com'>Stalgia</a> before class. Absences will not be excused after the fact except in extreme circumstances. Illness requires a doctor’s note. If you are more than 10 minutes late, you will be marked tardy. Three tardies results in one unexcused absence. Your attendance can be viewed <a href='https://docs.google.com/spreadsheets/d/1KI-6mijcypeczlwRfitTRq2lbtJpA3hB1dGWXfkrv7U/edit?usp=sharing' target='_blank'>here</a>, any disputes should be discussed with the TA within two weeks.</p>
-        
-        <p><span class='label'>Late work.</span> Late work will not be accepted.</p>
-      </section>
-
-
-      <section>
-        <h3><a href='https://github.com/voidlab/diversity-statement'>Commitment to Diversity and Safer Spaces</a></h3>
-        <p>We understand the classroom as a space for practicing freedom; where one may challenge psychic, social, and cultural borders and create meaningful artistic expressions. To do so we must acknowledge and embrace the different identities and backgrounds we inhabit. This means that we will use preferred pronouns, respect self-identifications, and be mindful of special needs. Disagreement is encouraged and supported, however our differences affect our conceptualization and experience of reality, and it is extremely important to remember that certain gender, race, sex, and class identities are more privileged while others are undermined and marginalized. Consequently, this makes some people feel more protected or vulnerable during debates and discussions. A collaborative effort between the students, TA, and instructor is needed to create a supportive learning environment. While everyone should feel free to experiment creatively and conceptually, if a class member points out that something you have said or shared with the group is offensive, avoid being defensive; instead approach the discussion as a valuable opportunity for us to grow and learn from one another. Alternatively if you feel that something said in discussion or included in a piece of work is harmful, you are encouraged to speak with the instructor or TA.</p>
-      </section>
-
-
-      <section>
-        <h3>Disability Services</h3>
-        <p>UCLA strives to make all learning experiences as accessible as possible. If you anticipate or experience academic barriers based on a disability, please let me know as soon as possible. It is necessary for you to register with the <a href='http://www.cae.ucla.edu/'>UCLA Center for Accessible Education</a> so that we can establish reasonable accommodations. After registration, make arrangements with me to discuss how to implement these accommodations.</p>
-      </section>
-    </div>
-
-    <!-- SCHEDULE -->
-    <div id='schedule' class='block'>
-      <h2>Schedule</h2>
-      <section>
-        <table>
-          <!-- WEEK 1 -->
-          <tr>
-            <td>WEEK 1</td>
-            <td>M 4/2</td>
-            <td>
-              Introduction<br>
-              ❗DUE: <a onclick="openSection('#projects', 'p1')">Pecha Kucha (15 x 20s) with initial idea</a><br>
-            </td>
-          </tr>
-          <tr class='spacer'></tr>
-          <tr>
-            <td></td>
-            <td>W 4/4</td>
-            <td>
-              Workshop: Developing Ideas
-            </td>
-          </tr>
-          <tr class='spacer'></tr>
-          
-
-          <!-- WEEK 2 -->
-          <tr>
-            <td>WEEK 2</td>
-            <td>M 4/9</td>
-            <td>
-              Individual meetings, studio
-            </td>
-          </tr>
-          <tr class='spacer'></tr>
-          <tr>
-            <td></td>
-            <td>W 4/11</td>
-            <td>
-              Individual meetings, studio
-            </td>
-          </tr>
-          <tr class='spacer'></tr>
-          
-
-          <!-- WEEK 3 -->
-          <tr>
-            <td>WEEK 3</td>
-            <td>M 4/16</td>
-            <td>
-              Presentation about Senor Show equipment and proposal requirements<br>
-              First Senior Show committee meetings<br>
-              DMA Lecture: <a href='http://dma.ucla.edu/events/calendar/?ID=1071'>Ian Cheng</a>, 6pm EDA
-            </td>
-          </tr>
-          <tr class='spacer'></tr>
-          <tr>
-            <td></td>
-            <td>W 4/18</td>
-            <td>
-              Individual meetings, studio
-            </td>
-          </tr>
-          <tr class='spacer'></tr>
-          
-          <!-- WEEK 4 -->
-          <tr>
-            <td>WEEK 4</td>
-            <td>M 4/23</td>
-            <td>
-              Individual meetings, studio
-            </td>
-          </tr>
-          <tr class='spacer'></tr>
-          <tr>
-            <td></td>
-            <td>W 4/25</td>
-            <td>
-              Individual meetings, studio
-            </td>
-          </tr>
-          <tr class='spacer'></tr>
-          <tr>
-            <td></td>
-            <td>Th 4/26</td>
-            <td>
-              Career Development Workshop Series: Portfolio Advice Panel
-            </td>
-          </tr>
-          <tr class='spacer'></tr>
-          
-          <!-- WEEK 5 -->
-          <tr>
-            <td>WEEK 5</td>
-            <td>M 4/30</td>
-            <td>
-              Individual meetings, studio<br>
-              Install project process for mid-term review
-            </td>
-          </tr>
-          <tr class='spacer'></tr>
-          <tr>
-            <td></td>
-            <td>W 5/2</td>
-            <td>
-              ❗DUE: Mid-term review presentations<br>
-              Final decisions on presented work
-            </td>
-          </tr>
-          <tr class='spacer'></tr>
-          
-          <!-- WEEK 6 -->
-          <tr>
-            <td>WEEK 6</td>
-            <td>M 5/7</td>
-            <td>
-              Lecture: Alumni panel "life after graduating"
-            </td>
-          </tr>
-          <tr class='spacer'></tr>
-          <tr>
-            <td></td>
-            <td>W 5/9</td>
-            <td>
-              Individual meetings, studio
-            </td>
-          </tr>
-          <tr class='spacer'></tr>
-          
-          <!-- WEEK 7 -->
-          <tr>
-            <td>WEEK 7</td>
-            <td>M 5/14</td>
-            <td>
-              Individual meetings, studio
-            </td>
-          </tr>
-          <tr class='spacer'></tr>
-          <tr>
-            <td></td>
-            <td>W 5/16</td>
-            <td>
-              Individual meetings, studio
-            </td>
-          </tr>
-          <tr class='spacer'></tr>
-          
-          <!-- WEEK 8 -->
-          <tr>
-            <td>WEEK 8</td>
-            <td>M 5/21</td>
-            <td>
-              DUE: Invitatiion to industry<br>
-              Individual meetings, studio
-            </td>
-          </tr>
-          <tr class='spacer'></tr>
-          <tr>
-            <td></td>
-            <td>W 5/23</td>
-            <td>
-              Workshop: Documenting work in exhibition<br>
-              Individual meetings, studio
-            </td>
-          </tr>
-          <tr class='spacer'></tr>
-          
-          <!-- WEEK 9 -->
-          <tr>
-            <td>WEEK 9</td>
-            <td>M 5/28</td>
-            <td>
-              Memorial Day: no class          
-            </td>
-          </tr>
-          <tr class='spacer'></tr>
-          <tr>
-            <td></td>
-            <td>W 5/30</td>
-            <td>
-              Individual meetings, studio
-            </td>
-          </tr>
-          <tr class='spacer'></tr>
-          
-          <!-- WEEK 10 -->
-          <tr>
-            <td>WEEK 10</td>
-            <td>M 6/4</td>
-            <td>
-              Installation
-            </td>
-          </tr>
-          <tr class='spacer'></tr>
-          <tr>
-            <td></td>
-            <td>W 6/6</td>
-            <td>
-              ❗DUE: Final presentation of all work / exhibition walkthrough
-            </td>
-          </tr>
-          <tr class='spacer'></tr>
-          <tr>
-            <td></td>
-            <td>Th 6/7</td>
-            <td>
-              <b>🎉 Senior Show Opening! 🎉</b>
-            </td>
-          </tr>
-          <tr class='spacer'></tr>
-        </table>
-      </section>
-    </div>
-
-    <!-- PROJECTS -->
-    <div id='projects' class='block'>
-      
-      <h2>Projects</h2>
-      <section>
-        <h3 id="p1">PECHA KUCHA (DUE 4/2)</h3>
-        <div id="p1-content" style='display:block;'>
-          <p>We will open the first class with 5 minute pecha kucha presentations (15 slides x 20 seconds each). The goal of your presentation is to share who you are, what kinds of work you make, and what you want to focus on for your senior project.</p>
-
-          <p>Please use <a href="https://docs.google.com/presentation/d/1JDzS5hW8lYUJvmH7PK9ngVp0TmfU-CPuBVhYkqcGSU4/edit?usp=sharing" target="_blank">this pecha kucha template</a> which has auto-timed slides set up for you. There are 15 slides, each designed to play for 20 seconds. Here are instructions to make a copy and setup your presentation:</p>
-
-          <ol>
-            <li>Open the <a href="https://docs.google.com/presentation/d/1JDzS5hW8lYUJvmH7PK9ngVp0TmfU-CPuBVhYkqcGSU4/edit?usp=sharing" target="_blank">template</a>. Go to File > Make a Copy.</li>
-            <li>Fill in the slide contents (you can delete the numbers).</li>
-            <li>When it's done, go to File > Publish to the web, and select these settings and click Publish:
-              <img src="imgs/publish.png">
-            </li>
-            <li>Copy the link and test it in your browser. In the URL, add an extra 0 to the part that says 2000, so it reads "delayms=20000". This will make the slides advance every 20s.</li>
-            <li>Add this updated URL and your name to <a href="https://docs.google.com/document/d/1d0DW5Dq2gJWVkJ9mnUsIlXAJxOPnJl_BGVzjzeZUN_E/edit?usp=sharing" target="_blank">this doc</a> before the start of the first class on 4/2.</li>
-          </ol>
-          <br>
-
-          <p>Slides 1-10 should contain previous work you've done that best illustrates your skills and interests. This need not cover everything you’ve made, just the most relevant work. You might include images, text, or video clips. You can present 10 different works, or multiple images of a fewer number of projects.</p>
-
-          <p>Slides 11-12 should contain your initial direction for your senior project. Determine a topic or issue that you would like to focus on for this project. It could be something in the news, a question on your mind, an issue you feel needs more awareness, or anything else. The topic should be <b>specific</b>, and something you can form a <b>unique point of view</b> around. That is, "cats" or "the color red" are probably not appropriate topics. The first two slides should introduce your topic of focus and tell us why it's interesting to you.</p>
-
-          <p>Slides 13-15 should contain three <b>different</b> possible ideas for what your senior project will be. What form it may take, how it might specifically address your topic, what it might communicate. Remember, you only have 20 seconds to talk about each idea so your slide will need to be concise.</p>
-
-          <p>The timing of a pecha kucha is fast. <b>You will need to rehearse in advance.</b> This is your senior project. This is your chance to start with momentum and make a really great project.</p>
-
-        </div>
-      </section>
-      
-    </div>
-
-
-    <!-- RESOURCES -->
-    <div id='resources' class='block'>
-      
-      <h2>Resources</h2>
-
-      <section>
-        Coming soon...
-        <!-- <h3 id="tools">TOOLS</h3>
-        <ul>
-          <li><a href="https://www.google.com/chrome/browser/">Chrome</a> - You may use any browser you like but this one will be used for demos in class</li>
-          <li><a href="http://brackets.io/">Brackets</a> - Code editor for HTML/CSS/JS</li>
-          <li><a href="https://cyberduck.io/?l=en">Cyberduck</a> - FTP tool for uploading files online</li>
-          <li><a href="./ftp/">How to FTP</a> - Uploading your files online with Cyberduck</li>
-        </ul> -->
-      </section>
-      
-      
-      
+      </div>
     </div>
   </div>
 </body>

@@ -1,9 +1,10 @@
 body {
   padding: 0;
   margin: 3em; 
-  font-family: 'Amiko', sans-serif;
-  line-height: 1.5em;
-  font-size: 15px;
+  font-family: 'Inconsolata', sans-serif;
+  line-height: 1.4em;
+  font-size: 18px;
+  background: #fff700;
 }
 
 *, *:before, *:after {
@@ -54,7 +55,8 @@ nav ul {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .container:after {
@@ -63,19 +65,23 @@ nav ul {
   clear: both;
 }
 
+.content {
+  margin-right: 200px;
+}
+
+
 .block {
   display: none;
 }
 
 a, .button {
-  color: darkviolet;
+  color: #ff00f7;
   text-decoration: none;
   cursor: pointer;
 }
 
 a:hover, .button:hover {
-  background: yellow;
-  color: black;
+  background: white;
 }
 
 h1 a {
@@ -129,15 +135,14 @@ td {
 
 
 #projects h4 {
-  color: darkviolet;
+  color: #ff00f7;
   display: inline-block;
   margin-top: 0;
   cursor: pointer;
 }
 
 #projects h4:hover {
-  background: yellow;
-  color: black;
+  background: white;
 }
 
 .label {
@@ -152,7 +157,7 @@ pre {
 #bird-cnv {
   position:fixed;
   top: 50px;
-  right: 20px;
+  right: 50px;
 }
 
 

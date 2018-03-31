@@ -40,7 +40,7 @@ var lastCount = 0;
 var rate = 200;
 var curIndex = 0;
 
-var curPosY = 800;
+var curPosY = window.innerHeight - 320;
 
 //0 = main
 //1 = eat
@@ -59,14 +59,15 @@ function preload() {
 
 function setup() {
   // put setup code here
-  cnv = createCanvas(220, 1020);
+  cnv = createCanvas(220, windowHeight-100);
   cnv.id('bird-cnv');
-  background("darkviolet");
+  background("#ff00f7");
+  noStroke();
 }
 
 function draw() {
   fill(255);
-  rect(9, 10, 201, 1000);
+  rect(9, 10, 201, height-20);
   cycleMain();
   image(curSprites[curIndex], 10, curPosY+10);
 }
@@ -100,7 +101,7 @@ function imageLoad(array, name, num) {
 
 function mousePressed() {
   //check if on bird-friend
-  if((mouseX > 30 && mouseX < width-30) && (mouseY > 775 && mouseY < height-20)) {
+  if((mouseX > 30 && mouseX < width-30) && (mouseY > height-200 && mouseY < height-20)) {
     if(state == 0) {
       wormsEaten++;
       if(wormsEaten <= 3) {
