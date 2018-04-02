@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  var open;
 
   var hash = window.location.hash;
   if (hash && $(hash).length) {
@@ -20,11 +19,13 @@ $(document).ready(function() {
 function openSection(id, heading) {
   if (open && open === heading) closeSection(heading);
   else {
-    open = heading;
     $('.block').hide();
     if (heading) $('.toggle').hide();
     $(id).show();
-    $('#'+heading+'-content').show();
+    $('#'+heading+'-content').show();    
+    if ($('#projects div.toggle:visible')[0]) {
+      open = $('#projects div.toggle:visible')[0].id.substring(0, 2);
+    }
     window.location.hash = id.substring(1);
     if (!heading) {
       $(window).scrollTop(0);
