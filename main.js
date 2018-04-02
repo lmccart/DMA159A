@@ -22,7 +22,7 @@ function openSection(id, heading) {
   else {
     open = heading;
     $('.block').hide();
-    $('.toggle').hide();
+    if (heading) $('.toggle').hide();
     $(id).show();
     $('#'+heading+'-content').show();
     window.location.hash = id.substring(1);
