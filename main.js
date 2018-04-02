@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  var open;
 
   var hash = window.location.hash;
   if (hash && $(hash).length) {
@@ -8,18 +9,34 @@ $(document).ready(function() {
   $('#links .button').click(function() {
     var selected = '#'+$(this).data('id');
     openSection(selected);
-  })
+  });
+
+  $('#projects h3').click(function() {
+    var selected = $(this).attr('id');
+    openSection('#projects', selected);
+  });
 });
 
 function openSection(id, heading) {
-  $('.block').hide();
-  $(id).show();
-  window.location.hash = id.substring(1);
-  if (!heading) {
-    $(window).scrollTop(0);
-  } else {
-    $(window).scrollTop($("#"+heading).offset().top-30);
+  if (open && open === heading) closeSection(heading);
+  else {
+    open = heading;
+    $('.block').hide();
+    $('.toggle').hide();
+    $(id).show();
+    $('#'+heading+'-content').show();
+    window.location.hash = id.substring(1);
+    if (!heading) {
+      $(window).scrollTop(0);
+    } else {
+      $(window).scrollTop($("#"+heading).offset().top-30);
+    }
   }
+}
+
+function closeSection(heading) {
+  $('.toggle').hide();
+  open = null;
 }
 
 //BIRD ANIMATION

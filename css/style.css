@@ -80,10 +80,6 @@ a, .button {
   cursor: pointer;
 }
 
-a:hover, .button:hover {
-  background: white;
-}
-
 h1 a {
   color: black;
   background: none !important;
@@ -132,17 +128,32 @@ td {
 .spacer {
   height: 1em;
 }
+.weekspacer {
+  height: 3em;
+}
 
+#projects h3 {
+  display: block;
+  float: left;
+  clear: both;
+  margin: 0.5em 0;
+}
+
+#projects div {
+  width: 100%;
+  float: left;
+  margin-bottom: 1em;
+}
 
 #projects h4 {
   color: #ff00f7;
   display: inline-block;
   margin-top: 0;
-  cursor: pointer;
 }
 
-#projects h4:hover {
+a:hover, .button:hover, #projects h3:hover, #projects h4:hover {
   background: white;
+  cursor: pointer;
 }
 
 .label {
