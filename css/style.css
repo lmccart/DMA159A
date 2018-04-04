@@ -216,4 +216,8 @@ pre {
   #bird-cnv {
     display:none;
   }
+
+  .content {
+    width: 100%;
+  }
 }
