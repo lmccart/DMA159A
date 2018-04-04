@@ -125,6 +125,22 @@ td {
   width: 70%;
 }
 
+#meetings {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+#meetings tr:nth-child(1) {
+  text-decoration: underline;
+}
+#meetings td:nth-child(1) {
+  font-weight: normal;
+}
+
+#meetings td:nth-child(2) {  
+  min-width: 6em;
+}
+
 .spacer {
   height: 1em;
 }
